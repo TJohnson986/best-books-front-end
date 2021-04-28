@@ -1,9 +1,9 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Jumbotron from 'react-bootstrap/Jumbotron';
-import './MyFavoriteBooks.css';
+import './Bookshelf.css';
 
-class MyFavoriteBooks extends React.Component {
+class Bookshelf extends React.Component {
   render() {
     return(
       <Jumbotron>
@@ -16,4 +16,4 @@ class MyFavoriteBooks extends React.Component {
   }
 }
 
-export default MyFavoriteBooks;
+export default Bookshelf;

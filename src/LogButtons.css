@@ -1,0 +1,23 @@
+button {
+  margin-left: 20px;
+}
+
+.btnOut {
+  border-radius: 10px;
+  background-color:greenyellow;
+  padding: 5px;
+}
+
+.btnOut:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+.btnIn {
+  border-radius: 10px;
+  background-color: greenyellow;
+  padding: 5px;
+}
+
+.btnIn:hover {
+  background-color: whitesmoke;
+}
