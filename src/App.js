@@ -3,7 +3,6 @@ import Header from './Header';
 import IsLoadingAndError from './IsLoadingAndError';
 import Login from './Login';
 import Profile from './Profile';
-import Bookshelf from './Bookshelf';
 import { withAuth0 } from '@auth0/auth0-react';
 import Footer from './Footer';
 import {
@@ -11,6 +10,8 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import MyFavoriteBooks from './MyFavoriteBooks';
+import BestBooks from './BestBooks';
 
 class App extends React.Component {
 
@@ -24,10 +25,11 @@ class App extends React.Component {
             <Header />
             <Switch>
               <Route exact path="/">
-                {!isAuthenticated ? <Login /> : <Bookshelf />}
+                {isAuthenticated ? <BestBooks /> : <Login />}
               </Route>
               <Route exact path="/Profile">
                 {isAuthenticated ? <Profile /> : ''}
+                {isAuthenticated ? <MyFavoriteBooks /> : ''}
               </Route>
             </Switch>
             <Footer />
